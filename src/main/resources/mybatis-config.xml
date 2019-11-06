@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- settings标签设置重要的键值对,name设置键，value设置值 -->
+	<settings>
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+		<!-- 开启全局懒加载机制 -->
+		<setting name="lazyLoadingEnabled" value="true"/>
+		<setting name="aggressiveLazyLoading" value="false"/>
+	</settings>
+	<plugins>
+		<plugin interceptor="com.github.pagehelper.PageInterceptor">
+			<property name="helperDialect" value="mysql"></property>
+			<property name="reasonable" value="true"></property>
+		</plugin>
+	</plugins>
+	
+</configuration>

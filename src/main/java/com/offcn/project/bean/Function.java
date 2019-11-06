@@ -1,0 +1,132 @@
+package com.offcn.project.bean;
+
+import com.offcn.sys.bean.Employee;
+
+public class Function {
+    private Integer id;
+
+    private String proname;
+
+    private String analysisname;
+
+    private Integer modeleFk;
+
+    private String functionname;
+
+    private String level;
+
+    private String simpledis;
+
+    private String detaileddis;
+
+    private String remark;
+    private Employee employee;
+    private Project project;
+    private Model model;
+
+    private Analysis analysis;
+
+    public Analysis getAnalysis() {
+        return analysis;
+    }
+
+    public void setAnalysis(Analysis analysis) {
+        this.analysis = analysis;
+    }
+
+    public Employee getEmployee() {
+        return employee;
+    }
+
+    public void setEmployee(Employee employee) {
+        this.employee = employee;
+    }
+
+    public Project getProject() {
+        return project;
+    }
+
+    public void setProject(Project project) {
+        this.project = project;
+    }
+
+    public Model getModel() {
+        return model;
+    }
+
+    public void setModel(Model model) {
+        this.model = model;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getProname() {
+        return proname;
+    }
+
+    public void setProname(String proname) {
+        this.proname = proname == null ? null : proname.trim();
+    }
+
+    public String getAnalysisname() {
+        return analysisname;
+    }
+
+    public void setAnalysisname(String analysisname) {
+        this.analysisname = analysisname == null ? null : analysisname.trim();
+    }
+
+    public Integer getModeleFk() {
+        return modeleFk;
+    }
+
+    public void setModeleFk(Integer modeleFk) {
+        this.modeleFk = modeleFk;
+    }
+
+    public String getFunctionname() {
+        return functionname;
+    }
+
+    public void setFunctionname(String functionname) {
+        this.functionname = functionname == null ? null : functionname.trim();
+    }
+
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level == null ? null : level.trim();
+    }
+
+    public String getSimpledis() {
+        return simpledis;
+    }
+
+    public void setSimpledis(String simpledis) {
+        this.simpledis = simpledis == null ? null : simpledis.trim();
+    }
+
+    public String getDetaileddis() {
+        return detaileddis;
+    }
+
+    public void setDetaileddis(String detaileddis) {
+        this.detaileddis = detaileddis == null ? null : detaileddis.trim();
+    }
+
+    public String getRemark() {
+        return remark;
+    }
+
+    public void setRemark(String remark) {
+        this.remark = remark == null ? null : remark.trim();
+    }
+}
